@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <title>Random Card</title>
+    <script src="https://kit.fontawesome.com/ef9d6352ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+</head>
+
+<body class="bg-success">
+    <div class="d-flex justify-content-center d-block">
+        <div class="d-flex justify-content-center w-75">
+            <div class="contenedor border rounded m-5 bg-white w-50 h-auto mt-2">
+                <div id="paloArriba" class="text-start ms-3"></div>
+                <div id="numeroCentral" class="d-flex align-items-center justify-content-center fw-bold"></div>
+                <div id="paloAbajo" class="me-3"></div>
+            </div>
+        </div>
     </div>
-  </body>
+    <button value="Actualizar" onclick="location.reload()" />Actualizar</button>
+    <script type="text/javascript">
+        function actualizar() {
+            location.reload(true);
+        }
+        setInterval("actualizar()", 10000);
+    </script>
+</body>
+
 </html>

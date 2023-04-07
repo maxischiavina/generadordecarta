@@ -1,1 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#paloArriba {
+  height: 80px;
+  font-size: 80px;
+}
+
+#numeroCentral {
+  height: 240px;
+  font-size: 120px;
+}
+
+#paloAbajo {
+  height: 80px;
+  font-size: 80px;
+  transform: rotate(180deg);
+}
