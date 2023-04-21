@@ -7,7 +7,6 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-
   const palo = ["♥", "♠", "♦", "♣"];
   const numero = [
     "A",
@@ -27,7 +26,13 @@ window.onload = function() {
 
   function figuraRandom() {
     let paloRandom = Math.floor(Math.random() * palo.length);
-    return palo[paloRandom];
+    let figura = palo[paloRandom];
+    if (figura === "♥") {
+      figura = '<span class="palo corazon">' + figura + "</span>";
+    } else {
+      figura = '<span class="palo">' + figura + "</span>";
+    }
+    return figura;
   }
 
   function numRandom() {

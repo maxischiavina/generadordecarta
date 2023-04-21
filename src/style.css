@@ -15,3 +15,11 @@
   font-size: 80px;
   transform: rotate(180deg);
 }
+
+.palo {
+  color: black;
+}
+
+.palo.corazon {
+  color: red;
+}
